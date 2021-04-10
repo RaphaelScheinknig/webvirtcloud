@@ -612,7 +612,7 @@ install_ubuntu() {
     if [ "$DISTRO_MAJOR_VERSION" -lt 18 ]; then
        apt-get -y install kvm libvirt-bin bridge-utils sasl2-bin python-guestfs supervisor || return 1
     else
-       apt install -y qemu-kvm libvirt-bin bridge-utils virt-manager sasl2-bin python3-guestfs supervisor || return 1
+ 	apt install -y qemu-kvm libvirt-bin bridge-utils virt-manager sasl2-bin python3-guestfs supervisor || return 1 
     fi
 
     return 0
